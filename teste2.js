@@ -22,55 +22,13 @@ async function main() {
                     {
                         "type": "text",
                         "text": `
-                  As figuras musicais que você vai trabalhar são: semibreve, mínima, semínima, colcheia, semicolcheis, fusa e semifusa.
+                  Você vai identificar as notas no pentagrama considerando a sua verticalidade.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  A semínima é uma figura musical que possui haste e a cabeça da nota está preenchida.
-                `
-                    },
-                    {
-                        "type": "text",
-                        "text": `
-                  A mínima é uma figura musical que possui haste e a cabeça da nota não está preenchida, ela é vazada.
-                `
-                    },
-                    {
-                        "type": "text",
-                        "text": `
-                  Considerando um compasso 4/4, um compasso não pode conter apenas uma semínima.
-                `
-                    },
-                    {
-                        "type": "text",
-                        "text": `
-                  Considerando um compasso 4/4, uma semínima vale um tempo.
-                `
-                    },
-                    {
-                        "type": "text",
-                        "text": `
-                  Considerando um compasso 4/4, uma mínima vale dois tempos, ou seja, uma mínima vale o dobro da semínima.
-                `
-                    },
-                    {
-                        "type": "text",
-                        "text": `
-                  Considerando um compasso 4/4, uma semibreve vale quatro tempos, ou seja, uma semibreve vale o dobro da mínima.
-                `
-                    },
-                    {
-                        "type": "text",
-                        "text": `
-                  Para preencher um compasso 4/4, são necessários 4 tempos.
-                `
-                    },
-                    {
-                        "type": "text",
-                        "text": `
-                  A barra de compasso é uma linha vertical que delimita os compassos e não possui cabeça como as notas.
+                  Inicialmente usaremos a clave de sol.
                 `
                     },
                     {
@@ -88,7 +46,26 @@ async function main() {
                     {
                         "type": "text",
                         "text": `
-                  Na clave de sol, a nota Sol é a nota que está na linha 2 do pentagrama.
+                  As notas musicais no pentagrama só podem ser escritas nas linhas ou nos espaços. Uma nota é considerada escrita na linha quando
+                  a linha corta o meio da cabeça da nota. Uma nota é considerada escrita no espaço quando a linha apenas encosta na cabeça da nota.
+                `
+                    },
+                    {
+                        "type": "text",
+                        "text": `
+                  Na clave de sol, a nota Sol é a nota que está na linha 2 do pentagrama, ou seja, a linha 2 corta a cabeça da nota Sol.
+                `
+                    },
+                    {
+                        "type": "text",
+                        "text": `
+                  A nota Lá, vizinha superior da nota Sol, é a nota que está no espaço 2 do pentagrama, ou seja, a linha 2 toca a parte inferior da nota Lá.
+                `
+                    },
+                    {
+                        "type": "text",
+                        "text": `
+                  A nota Fá, vizinha inferior da nota Sol, é a nota que está no espaço 1 do pentagrama, ou seja, a linha 2 toca a parte superior da nota Fá.
                 `
                     },
                     {
@@ -119,6 +96,18 @@ async function main() {
                         "type": "text",
                         "text": `
                   Na clave de sol a primeira linha suplementar inferior representa a nota Dó.
+                `
+                    },
+                    {
+                        "type": "text",
+                        "text": `
+                  Quando a primeira linha suplementar inferior toca a parte superior da nota, esta nota é Si, ou seja, é a vizinha inferior da nota Dó.
+                `
+                    },
+                    {
+                        "type": "text",
+                        "text": `
+                  Na escrita musical, as informações são lidas da esquerda para a direita.
                 `
                     },
                     {
@@ -162,28 +151,27 @@ async function main() {
                     {
                         "type": "text",
                         "text": `
-                O primeiro compasso possui duas mínimas nas notas Dó e Ré. A nota Dó está escrita na primeira linha suplementar inferior.
-                A nota Ré está escrita entre a primeira linha suplementar inferior e a primeira linha do pentagrama. Ambas escritas com a figura musical chamada mínima.
-                A nota Ré sempre estará escrita acima da nota Dó e abaixo da nota Mi, considerando a verticalidade do pentagrama. Após a nota Ré temos uma barra de compasso neste exemplo.
+                O primeiro compasso possui as notas Dó e Ré. A nota Dó está escrita na primeira linha suplementar inferior.
+                A nota Ré está escrita entre a primeira linha suplementar inferior e a primeira linha do pentagrama.
+                A nota Ré sempre estará escrita acima da nota Dó, pois é a sua vizinha superior, e abaixo da nota Mi, por ser a sua vizinha inferior, considerando a verticalidade do pentagrama. Após a nota Ré temos uma barra de compasso neste exemplo.
               `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O segundo compasso possui três semínimas: Mi, Ré e Dó. Existe também uma pausa de semínima. A nota Mi está representada na linha 1 do pentagrama.
-                  A pausa de semínima, assim como a semínima, em um compasso 4/4 vale 1 tempo.
+                  O segundo compasso possui três notas: Mi, Ré e Dó. Existe também uma pausa de semínima. A nota Mi está representada na linha 1 do pentagrama.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O terceiro compasso possui quatro semínimas: Dó, Ré, Mi e Ré.
+                  O terceiro compasso possui quatro notas: Dó, Ré, Mi e Ré.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O quarto compasso possui uma semibreve: Dó.
+                  O quarto compasso possui uma nota apenas: Dó.
                 `
                     }
                 ]
@@ -214,20 +202,19 @@ async function main() {
                     },{
                         "type": "text",
                         "text": `
-                O primeiro compasso possui quatro semínimas nas notas Dó, Ré, Mi e Ré.
+                O primeiro compasso possui quatro notas: Dó, Ré, Mi e Ré.
               `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O segundo compasso possui duas mínimas: Dó e Ré.
+                  O segundo compasso possui duas notas: Dó e Ré.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O terceiro compasso começa com uma pausa de mínima e depois tem duas semínimas: Mi e Ré.
-                  A pausa de mínima, assim como a mínima, em um compasso 4/4 vale 2 tempos.
+                  O terceiro compasso começa com uma pausa de mínima e depois tem duas notas: Mi e Ré.
                 `
                     },
                     {
@@ -264,25 +251,25 @@ async function main() {
                     },{
                         "type": "text",
                         "text": `
-                O primeiro compasso possui duas mínimas nas notas Dó e Mi.
+                O primeiro compasso possui duas notas: Dó e Mi.
               `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O segundo compasso possui três semínimas: Mi, Ré e Dó. A última figura é uma pausa de semínima.
+                  O segundo compasso possui três notas: Mi, Ré e Dó. A última figura é uma pausa de semínima.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O terceiro compasso começa com quatro colcheias: Dó, Ré, Mi e Fá. No final do terceiro compasso existem duas semínimas, ambas na nota sol.
+                  O terceiro compasso começa com quatro notas: Dó, Ré, Mi e Fá. No final do terceiro compasso existem duas notas, ambas na nota sol.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O quarto compasso possui uma semibreve na nota Dó.
+                  O quarto compasso possui uma nota Dó.
                 `
                     }
                 ]
@@ -313,25 +300,25 @@ async function main() {
                     },{
                         "type": "text",
                         "text": `
-                O primeiro compasso possui quatro semínimas nas notas Dó, Ré, Mi e Fá.
+                O primeiro compasso possui quatro notas: Dó, Ré, Mi e Fá.
               `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O segundo compasso possui uma mínima na nota sol e uma semínima na nota Mi. A última figura é uma pausa de semínima.
+                  O segundo compasso possui uma nota sol e uma nota Mi. A última figura é uma pausa de semínima.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O terceiro compasso começa com quatro semínimas: Sol, Fá, Mi e Ré.
+                  O terceiro compasso possui quatro notas: Sol, Fá, Mi e Ré.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O quarto compasso possui duas semínimas nas notas Dó e Ré uma mínima na nota Dó.
+                  O quarto compasso possui três notas: Dó, Ré e Dó.
                 `
                     }
                 ]
@@ -362,25 +349,25 @@ async function main() {
                     },{
                         "type": "text",
                         "text": `
-                O primeiro compasso possui quatro semínimas nas notas Dó, Ré, Mi e Ré.
+                O primeiro compasso possui quatro notas: Dó, Ré, Mi e Ré.
               `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O segundo compasso possui uma mínima na nota Mi e uma semínima na nota Fá. A última figura é uma pausa de semínima.
+                  O segundo compasso possui duas notas: Mi e Fá. A última figura é uma pausa de semínima.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O terceiro compasso começa com quatro semínimas: Mi, Fá, Sol e Sol.
+                  O terceiro compasso possui com quatro notas: Mi, Fá, Sol e Sol.
                 `
                     },
                     {
                         "type": "text",
                         "text": `
-                  O quarto compasso possui duas semínimas nas notas Dó e Sol uma mínima na nota Dó.
+                  O quarto compasso possui três notas: Dó, Sol e Dó.
                 `
                     }
                 ]
@@ -400,7 +387,7 @@ async function main() {
                     },
                     {
                         "type": "text",
-                        "text": "Quantos compassos existem no trecho?"
+                        "text": "Qual a primeira nota deste exemplo?"
                     },
                     {
                         "type": "text",
@@ -416,11 +403,11 @@ async function main() {
                     },
                     {
                         "type": "text",
-                        "text": "Qual o vizinho superior da nota Sol?"
+                        "text": "A última nota deste exemplo está na linha ou no espaço?"
                     },
                     {
                         "type": "text",
-                        "text": "Considerandoa clave de sol e que a nota Sol é escrita no pentagrama na segunda linha, qual nota é representada na linha 5 do pentagrama?"
+                        "text": "Em qual linha do pentagrama está escrita a primeira nora do terceiro compasso?"
                     }
                 ]
             },
